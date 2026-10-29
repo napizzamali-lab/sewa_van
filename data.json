@@ -1,0 +1,365 @@
+{
+  "v": 2,
+  "name": "Sewa Van Persendirian",
+  "blurb": "Semak tarikh kosong dan anggaran harga, kemudian terus WhatsApp pemilik untuk sahkan tempahan.",
+  "phone": "0126911877",
+  "origin": "Kampung Bukit Kuching, Jeram",
+  "farFromKm": 350,
+  "prices": {
+    "near": 350,
+    "far": 400,
+    "two": 600,
+    "extra": 300
+  },
+  "destinations": [
+    {
+      "id": "d1",
+      "name": "Kuala Selangor",
+      "state": "Selangor",
+      "km": 20
+    },
+    {
+      "id": "d2",
+      "name": "Sekinchan",
+      "state": "Selangor",
+      "km": 60
+    },
+    {
+      "id": "d3",
+      "name": "Shah Alam",
+      "state": "Selangor",
+      "km": 50
+    },
+    {
+      "id": "d4",
+      "name": "Klang / Pelabuhan Klang",
+      "state": "Selangor",
+      "km": 70
+    },
+    {
+      "id": "d5",
+      "name": "Petaling Jaya",
+      "state": "Selangor",
+      "km": 60
+    },
+    {
+      "id": "d6",
+      "name": "Kuala Kubu Bharu",
+      "state": "Selangor",
+      "km": 60
+    },
+    {
+      "id": "d7",
+      "name": "Sabak Bernam",
+      "state": "Selangor",
+      "km": 70
+    },
+    {
+      "id": "d8",
+      "name": "KLIA / KLIA2",
+      "state": "Selangor",
+      "km": 120
+    },
+    {
+      "id": "d9",
+      "name": "Sepang (Bagan Lalang)",
+      "state": "Selangor",
+      "km": 130
+    },
+    {
+      "id": "d10",
+      "name": "Kuala Lumpur",
+      "state": "Wilayah Persekutuan",
+      "km": 70
+    },
+    {
+      "id": "d11",
+      "name": "Putrajaya / Cyberjaya",
+      "state": "Wilayah Persekutuan",
+      "km": 90
+    },
+    {
+      "id": "d12",
+      "name": "Seremban",
+      "state": "Negeri Sembilan",
+      "km": 120
+    },
+    {
+      "id": "d13",
+      "name": "Port Dickson",
+      "state": "Negeri Sembilan",
+      "km": 170
+    },
+    {
+      "id": "d14",
+      "name": "Bandar Melaka",
+      "state": "Melaka",
+      "km": 200
+    },
+    {
+      "id": "d15",
+      "name": "Muar",
+      "state": "Johor",
+      "km": 240
+    },
+    {
+      "id": "d16",
+      "name": "Segamat",
+      "state": "Johor",
+      "km": 280
+    },
+    {
+      "id": "d17",
+      "name": "Batu Pahat",
+      "state": "Johor",
+      "km": 290
+    },
+    {
+      "id": "d18",
+      "name": "Kluang",
+      "state": "Johor",
+      "km": 330
+    },
+    {
+      "id": "d19",
+      "name": "Johor Bahru",
+      "state": "Johor",
+      "km": 400
+    },
+    {
+      "id": "d20",
+      "name": "Pasir Gudang",
+      "state": "Johor",
+      "km": 410
+    },
+    {
+      "id": "d21",
+      "name": "Mersing (jeti Tioman)",
+      "state": "Johor",
+      "km": 410
+    },
+    {
+      "id": "d22",
+      "name": "Genting Highlands",
+      "state": "Pahang",
+      "km": 100
+    },
+    {
+      "id": "d23",
+      "name": "Janda Baik",
+      "state": "Pahang",
+      "km": 100
+    },
+    {
+      "id": "d24",
+      "name": "Fraser's Hill",
+      "state": "Pahang",
+      "km": 110
+    },
+    {
+      "id": "d25",
+      "name": "Karak",
+      "state": "Pahang",
+      "km": 120
+    },
+    {
+      "id": "d26",
+      "name": "Bentong",
+      "state": "Pahang",
+      "km": 140
+    },
+    {
+      "id": "d27",
+      "name": "Temerloh",
+      "state": "Pahang",
+      "km": 180
+    },
+    {
+      "id": "d28",
+      "name": "Raub",
+      "state": "Pahang",
+      "km": 190
+    },
+    {
+      "id": "d29",
+      "name": "Cameron Highlands",
+      "state": "Pahang",
+      "km": 220
+    },
+    {
+      "id": "d30",
+      "name": "Jerantut",
+      "state": "Pahang",
+      "km": 240
+    },
+    {
+      "id": "d31",
+      "name": "Kuala Lipis",
+      "state": "Pahang",
+      "km": 280
+    },
+    {
+      "id": "d32",
+      "name": "Taman Negara (Kuala Tahan)",
+      "state": "Pahang",
+      "km": 300
+    },
+    {
+      "id": "d33",
+      "name": "Kuantan",
+      "state": "Pahang",
+      "km": 310
+    },
+    {
+      "id": "d34",
+      "name": "Pekan",
+      "state": "Pahang",
+      "km": 350
+    },
+    {
+      "id": "d35",
+      "name": "Cherating",
+      "state": "Pahang",
+      "km": 350
+    },
+    {
+      "id": "d36",
+      "name": "Tanjung Malim",
+      "state": "Perak",
+      "km": 90
+    },
+    {
+      "id": "d37",
+      "name": "Teluk Intan",
+      "state": "Perak",
+      "km": 130
+    },
+    {
+      "id": "d38",
+      "name": "Tapah",
+      "state": "Perak",
+      "km": 150
+    },
+    {
+      "id": "d39",
+      "name": "Kampar",
+      "state": "Perak",
+      "km": 170
+    },
+    {
+      "id": "d40",
+      "name": "Ipoh",
+      "state": "Perak",
+      "km": 200
+    },
+    {
+      "id": "d41",
+      "name": "Lumut / Pangkor",
+      "state": "Perak",
+      "km": 220
+    },
+    {
+      "id": "d42",
+      "name": "Kuala Kangsar",
+      "state": "Perak",
+      "km": 250
+    },
+    {
+      "id": "d43",
+      "name": "Taiping",
+      "state": "Perak",
+      "km": 290
+    },
+    {
+      "id": "d44",
+      "name": "Gerik",
+      "state": "Perak",
+      "km": 350
+    },
+    {
+      "id": "d45",
+      "name": "Butterworth",
+      "state": "Pulau Pinang",
+      "km": 370
+    },
+    {
+      "id": "d46",
+      "name": "George Town",
+      "state": "Pulau Pinang",
+      "km": 390
+    },
+    {
+      "id": "d47",
+      "name": "Sungai Petani",
+      "state": "Kedah",
+      "km": 410
+    },
+    {
+      "id": "d48",
+      "name": "Alor Setar",
+      "state": "Kedah",
+      "km": 470
+    },
+    {
+      "id": "d49",
+      "name": "Kuala Kedah (jeti Langkawi)",
+      "state": "Kedah",
+      "km": 480
+    },
+    {
+      "id": "d50",
+      "name": "Kangar",
+      "state": "Perlis",
+      "km": 520
+    },
+    {
+      "id": "d51",
+      "name": "Kuala Perlis (jeti Langkawi)",
+      "state": "Perlis",
+      "km": 540
+    },
+    {
+      "id": "d52",
+      "name": "Gua Musang",
+      "state": "Kelantan",
+      "km": 410
+    },
+    {
+      "id": "d53",
+      "name": "Kota Bharu",
+      "state": "Kelantan",
+      "km": 580
+    },
+    {
+      "id": "d54",
+      "name": "Kemaman",
+      "state": "Terengganu",
+      "km": 420
+    },
+    {
+      "id": "d55",
+      "name": "Dungun",
+      "state": "Terengganu",
+      "km": 470
+    },
+    {
+      "id": "d56",
+      "name": "Kuala Terengganu",
+      "state": "Terengganu",
+      "km": 550
+    },
+    {
+      "id": "d57",
+      "name": "Marang",
+      "state": "Terengganu",
+      "km": 570
+    },
+    {
+      "id": "d58",
+      "name": "Kuala Besut (jeti Perhentian)",
+      "state": "Terengganu",
+      "km": 650
+    }
+  ],
+  "bookings": []
+}

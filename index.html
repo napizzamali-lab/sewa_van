@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sewa Van Persendirian</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1 id="name"></h1>
+      <p class="blurb" id="blurb"></p>
+    </div>
+    <a class="btn call" id="call" href="#">Telefon</a>
+  </header>
+
+  <section class="card">
+    <h2><span class="step">1</span>Pilih destinasi</h2>
+    <input id="search" type="search" placeholder="Cari destinasi atau negeri…" autocomplete="off">
+    <div class="dest-list" id="destList"></div>
+    <div class="sub" id="distInfo" style="margin-top:8px"></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">2</span>Pilih tarikh</h2>
+    <div class="cal-head">
+      <button id="prev" aria-label="Bulan sebelum">‹</button>
+      <strong id="monthLabel"></strong>
+      <button id="next" aria-label="Bulan seterusnya">›</button>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="legend">
+      <span><i style="background:var(--busy)"></i>Telah ditempah</span>
+      <span><i style="background:var(--brand)"></i>Hari mula</span>
+      <span><i style="background:var(--sel)"></i>Tempoh sewa</span>
+    </div>
+    <label>Tempoh sewa</label>
+    <div class="row stepper">
+      <button id="minus" aria-label="Kurang sehari">−</button>
+      <span id="daysLabel">1 hari</span>
+      <button id="plus" aria-label="Tambah sehari">+</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">3</span>Butiran anda</h2>
+    <div class="grid2">
+      <div><label for="fName">Nama</label><input id="fName" autocomplete="name"></div>
+      <div><label for="fPhone">No. telefon</label><input id="fPhone" type="tel" autocomplete="tel"></div>
+      <div><label for="fPax">Bilangan penumpang</label><input id="fPax" type="number" min="1" inputmode="numeric"></div>
+      <div><label for="fPickup">Lokasi ambil</label><input id="fPickup" placeholder="Cth: depan rumah"></div>
+    </div>
+    <label for="fNote">Catatan (pilihan)</label>
+    <textarea id="fNote" placeholder="Cth: nak singgah tempat lain, bawa barang banyak…"></textarea>
+  </section>
+
+  <section class="card">
+    <div class="sub">Anggaran harga</div>
+    <div class="price" id="price">RM –</div>
+    <div class="sub" id="breakdown"></div>
+    <div class="status" id="status" hidden></div>
+    <a class="cta off" id="wa" target="_blank" rel="noopener">WhatsApp pemilik untuk sahkan</a>
+    <div class="note" id="needs"></div>
+    <div class="note">Harga ialah anggaran. Tempahan hanya sah selepas pemilik membalas di WhatsApp. Butiran lain seperti tol dan minyak, sila tanya pemilik semasa mengesahkan.</div>
+  </section>
+
+  <section class="card">
+    <h2>Kadar sewa</h2>
+    <table class="rates" id="rates"></table>
+  </section>
+</div>
+
+<script src="data.js"></script>
+<script src="bookings.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

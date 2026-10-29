@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin · Sewa Van</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap wide">
+  <header class="top">
+    <div>
+      <h1>Admin tempahan</h1>
+      <p class="blurb">Nama dan telefon pelanggan disimpan dalam pelayar anda sahaja. Hanya <b>tarikh</b> yang dihantar ke laman awam.</p>
+    </div>
+    <a class="btn" href="index.html">Lihat laman</a>
+  </header>
+
+  <section class="card">
+    <h2>Tambah tempahan</h2>
+    <div class="grid2">
+      <div><label for="bStart">Tarikh mula</label><input id="bStart" type="date"></div>
+      <div><label for="bEnd">Tarikh akhir (termasuk)</label><input id="bEnd" type="date"></div>
+      <div><label for="bName">Nama pelanggan</label><input id="bName"></div>
+      <div><label for="bPhone">No. telefon</label><input id="bPhone" type="tel"></div>
+    </div>
+    <label for="bNote">Catatan</label>
+    <input id="bNote" placeholder="Destinasi, harga, deposit…">
+    <div class="actions"><button class="btn primary" id="bAdd">Tambah tempahan</button></div>
+    <div class="status warn" id="bMsg" hidden></div>
+  </section>
+
+  <section class="card">
+    <h2>Senarai tempahan <span class="tag" id="bCount"></span></h2>
+    <div class="table-scroll"><table id="bTable"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Terbitkan tarikh ke laman <span class="tag" id="bDirty"></span></h2>
+    <p class="sub" style="margin-top:0">Selepas menambah atau memadam tempahan, salin teks di bawah dan gantikan isi fail <b>bookings.js</b> di GitHub. Netlify akan kemas kini laman secara automatik.</p>
+    <textarea id="outBookings" readonly rows="5" style="font-family:monospace;font-size:.85rem"></textarea>
+    <div class="actions">
+      <button class="btn primary" id="cpBookings">Salin bookings.js</button>
+      <button class="btn" id="dlBookings">Muat turun</button>
+    </div>
+    <div class="status ok" id="cpMsg" hidden></div>
+  </section>
+
+  <section class="card">
+    <h2>Tetapan &amp; harga</h2>
+    <div class="grid2">
+      <div><label for="sName">Nama perkhidmatan</label><input id="sName"></div>
+      <div><label for="sPhone">No. telefon (WhatsApp)</label><input id="sPhone" type="tel"></div>
+      <div><label for="sOrigin">Tempat bertolak</label><input id="sOrigin"></div>
+      <div><label for="sFar">Jarak jauh bermula (km)</label><input id="sFar" type="number" min="0"></div>
+      <div><label for="pNear">Sehari, dekat (RM)</label><input id="pNear" type="number" min="0"></div>
+      <div><label for="pFar">Sehari, jauh (RM)</label><input id="pFar" type="number" min="0"></div>
+      <div><label for="pTwo">2 hari (RM)</label><input id="pTwo" type="number" min="0"></div>
+      <div><label for="pExtra">Setiap hari tambahan (RM)</label><input id="pExtra" type="number" min="0"></div>
+    </div>
+    <label for="sBlurb">Penerangan ringkas</label>
+    <textarea id="sBlurb"></textarea>
+  </section>
+
+  <section class="card">
+    <h2>Destinasi <span class="tag" id="dCount"></span></h2>
+    <div class="grid2">
+      <div><label for="dName">Nama destinasi</label><input id="dName"></div>
+      <div><label for="dState">Negeri</label><input id="dState" list="stateList"><datalist id="stateList"></datalist></div>
+      <div><label for="dKm">Jarak (km)</label><input id="dKm" type="number" min="0"></div>
+    </div>
+    <div class="actions"><button class="btn primary" id="dAdd">Tambah destinasi</button></div>
+    <div class="table-scroll" style="margin-top:12px"><table id="dTable"></table></div>
+  </section>
+
+  <section class="card">
+    <h2>Terbitkan harga &amp; destinasi</h2>
+    <p class="sub" style="margin-top:0">Jika anda ubah tetapan, harga atau destinasi, salin teks ini dan gantikan isi fail <b>data.js</b> di GitHub. Tidak perlu jika hanya tarikh tempahan yang berubah.</p>
+    <textarea id="outData" readonly rows="5" style="font-family:monospace;font-size:.85rem"></textarea>
+    <div class="actions">
+      <button class="btn primary" id="cpData">Salin data.js</button>
+      <button class="btn" id="dlData">Muat turun</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Sandaran</h2>
+    <p class="sub" style="margin-top:0">Senarai penuh (dengan nama dan telefon) hanya ada dalam pelayar ini. Muat turun sandaran sekali-sekala. Jika data pelayar terpadam, pulihkan daripada fail sandaran.</p>
+    <div class="actions">
+      <button class="btn primary" id="dlBackup">Muat turun sandaran</button>
+      <label class="btn" style="margin:0;font-weight:400">Pulihkan sandaran<input id="restore" type="file" accept=".json,application/json" hidden></label>
+      <button class="btn danger" id="reset">Buang draf</button>
+    </div>
+  </section>
+</div>
+<script src="data.js"></script>
+<script src="bookings.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

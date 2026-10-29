@@ -1,0 +1,1 @@
+window.VAN_BOOKINGS = [];
