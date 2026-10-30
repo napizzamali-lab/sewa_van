@@ -1,1 +1,1 @@
-window.VAN_BOOKINGS = [{“start”:”2026-11-06”,”end”:”2026-11-09”}];
+window.VAN_BOOKINGS = [{"start":"2026-11-06","end":"2026-11-09"}];
