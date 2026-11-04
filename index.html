@@ -7,14 +7,74 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div>
-      <h1 id="name"></h1>
-      <p class="blurb" id="blurb"></p>
+<header class="hero">
+  <svg class="scene" viewBox="0 0 800 360" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#0b3b36"/>
+        <stop offset=".55" stop-color="#1f7a6b"/>
+        <stop offset="1" stop-color="#f2b25c"/>
+      </linearGradient>
+      <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffe9a8"/>
+        <stop offset="1" stop-color="#ffb457"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="360" fill="url(#sky)"/>
+    <circle cx="600" cy="205" r="62" fill="url(#sun)" opacity=".95"/>
+    <g fill="#fff" opacity=".18">
+      <ellipse cx="148" cy="70" rx="70" ry="12"/><ellipse cx="200" cy="82" rx="50" ry="9"/>
+      <ellipse cx="560" cy="48" rx="60" ry="10"/>
+    </g>
+    <path d="M0 250 Q90 190 200 235 T400 225 T620 230 T800 205 V360 H0Z" fill="#14594f"/>
+    <path d="M0 285 Q120 240 260 275 T520 268 T800 262 V360 H0Z" fill="#0e463e"/>
+    <g fill="#0a2f2a">
+      <path d="M70 268 l14 -34 l14 34z"/><path d="M96 270 l10 -26 l10 26z"/>
+      <path d="M690 262 l14 -34 l14 34z"/><path d="M716 264 l10 -26 l10 26z"/>
+    </g>
+    <rect y="305" width="800" height="55" fill="#2b2f33"/>
+    <rect y="305" width="800" height="4" fill="#4a5058"/>
+    <g fill="#f6e7a6">
+      <rect x="20" y="334" width="60" height="5" rx="2"/><rect x="140" y="334" width="60" height="5" rx="2"/>
+      <rect x="260" y="334" width="60" height="5" rx="2"/><rect x="380" y="334" width="60" height="5" rx="2"/>
+      <rect x="500" y="334" width="60" height="5" rx="2"/><rect x="620" y="334" width="60" height="5" rx="2"/>
+      <rect x="740" y="334" width="60" height="5" rx="2"/>
+    </g>
+    <g class="van" transform="translate(470 228)">
+      <ellipse cx="97" cy="82" rx="92" ry="6" fill="#000" opacity=".3"/>
+      <g class="bob">
+        <path d="M8 66 L8 22 Q8 14 16 14 L146 14 Q153 14 157 21 L176 48 Q186 50 186 60 L186 66 Z" fill="#f7f8f6"/>
+        <path d="M8 55 H186 V60 H8Z" fill="#1f9d6b"/>
+        <path d="M18 22 H56 V42 H18Z" fill="#9fd6e8"/>
+        <path d="M62 22 H100 V42 H62Z" fill="#9fd6e8"/>
+        <path d="M108 22 H138 V42 H108Z" fill="#9fd6e8"/>
+        <path d="M144 22 H150 Q153 22 155 25 L168 44 H144Z" fill="#9fd6e8"/>
+        <rect x="59" y="20" width="2" height="36" fill="#c9cfcb"/>
+        <rect x="103" y="20" width="2" height="36" fill="#c9cfcb"/>
+        <rect x="141" y="20" width="2" height="36" fill="#c9cfcb"/>
+        <rect x="14" y="52" width="168" height="1.5" fill="#d6dbd8"/>
+        <rect x="181" y="52" width="5" height="7" rx="2" fill="#ffd45e"/>
+        <rect x="8" y="50" width="4" height="8" rx="1.5" fill="#e0524a"/>
+        <rect x="184" y="60" width="3" height="6" fill="#9aa19d"/>
+        <rect x="106" y="46" width="12" height="2.5" rx="1.2" fill="#b7bdb9"/>
+      </g>
+      <g class="wheel" style="transform-origin:42px 70px"><circle cx="42" cy="70" r="14" fill="#1a1c1e"/><circle cx="42" cy="70" r="7" fill="#c9cfcb"/><path d="M42 63V77M35 70H49" stroke="#1a1c1e" stroke-width="2"/></g>
+      <g class="wheel" style="transform-origin:148px 70px"><circle cx="148" cy="70" r="14" fill="#1a1c1e"/><circle cx="148" cy="70" r="7" fill="#c9cfcb"/><path d="M148 63V77M141 70H155" stroke="#1a1c1e" stroke-width="2"/></g>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-badge">Van persendirian</div>
+    <h1 id="name">Sewa Van</h1>
+    <p class="hero-blurb" id="blurb"></p>
+    <div class="hero-chips" id="chips"></div>
+    <div class="hero-actions">
+      <a class="hbtn primary" href="#tempah">Semak tarikh &amp; harga</a>
+      <a class="hbtn" id="call" href="#">Telefon</a>
     </div>
-    <a class="btn call" id="call" href="#">Telefon</a>
-  </header>
+  </div>
+</header>
+
+<div class="wrap" id="tempah">
 
   <section class="card">
     <h2><span class="step">1</span>Pilih destinasi</h2>

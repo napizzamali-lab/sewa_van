@@ -361,5 +361,6 @@ window.VAN_DATA = {
       "km": 650
     }
   ],
-  "bookings": []
+  "bookings": [],
+  "vehicle": "Toyota Hiace diesel"
 };

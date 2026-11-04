@@ -37,6 +37,12 @@
   $('blurb').textContent = D.blurb;
   $('call').href = 'tel:' + D.phone;
   document.title = D.name;
+  $('chips').innerHTML = [
+    D.vehicle || '',
+    'Bermula RM' + D.prices.near + ' sehari',
+    D.destinations.length + ' destinasi',
+    'Bertolak dari ' + D.origin.split(',').pop().trim()
+  ].filter(Boolean).map(t => '<span>' + t.replace(/[&<>"']/g, '') + '</span>').join('');
 
   // Kadar sewa
   $('rates').innerHTML =
