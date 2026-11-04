@@ -5,6 +5,7 @@
   const DOW = ['Ah','Is','Se','Ra','Kh','Ju','Sa'];
   const pad = n => String(n).padStart(2, '0');
   const iso = d => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+  const fmt = d => pad(d.getDate()) + '/' + pad(d.getMonth() + 1) + '/' + String(d.getFullYear()).slice(-2);
   const parse = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
   const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
   const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -103,7 +104,7 @@
       st.className = 'status ' + (free ? 'ok' : 'bad');
       const end = addDays(start, days - 1);
       st.textContent = free
-        ? 'Tarikh kosong: ' + iso(start) + (days > 1 ? ' hingga ' + iso(end) : '')
+        ? 'Tarikh kosong: ' + fmt(start) + (days > 1 ? ' hingga ' + fmt(end) : '')
         : 'Ada tarikh dalam tempoh ini yang telah ditempah. Cuba tarikh atau tempoh lain.';
     } else st.hidden = true;
 
@@ -123,7 +124,7 @@
         'Nama: ' + name,
         $('fPhone').value.trim() && 'No. telefon: ' + $('fPhone').value.trim(),
         'Destinasi: ' + dd.name + ', ' + dd.state,
-        'Tarikh: ' + iso(start) + (days > 1 ? ' hingga ' + iso(end) : '') + ' (' + days + ' hari)',
+        'Tarikh: ' + fmt(start) + (days > 1 ? ' hingga ' + fmt(end) : '') + ' (' + days + ' hari)',
         $('fPax').value && 'Penumpang: ' + $('fPax').value,
         'Anggaran harga: RM' + pr.total,
         $('fNote').value.trim() && 'Catatan: ' + $('fNote').value.trim(),

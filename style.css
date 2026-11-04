@@ -90,3 +90,4 @@ body{background:radial-gradient(1200px 500px at 50% -100px,color-mix(in srgb,var
   .hero{min-height:450px}
   .hero .scene{width:150%;left:-30%}
 }
+.rates td:last-child{white-space:nowrap}
