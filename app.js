@@ -119,7 +119,6 @@
         'Destinasi: ' + dd.name + ', ' + dd.state,
         'Tarikh: ' + iso(start) + (days > 1 ? ' hingga ' + iso(end) : '') + ' (' + days + ' hari)',
         $('fPax').value && 'Penumpang: ' + $('fPax').value,
-        $('fPickup').value.trim() && 'Lokasi ambil: ' + $('fPickup').value.trim(),
         'Anggaran harga: RM' + pr.total,
         $('fNote').value.trim() && 'Catatan: ' + $('fNote').value.trim(),
         'Boleh sahkan? Terima kasih.'
@@ -143,6 +142,6 @@
   $('next').onclick = () => { view = new Date(view.getFullYear(), view.getMonth() + 1, 1); renderCal(); };
   $('minus').onclick = () => { if (days > 1) { days--; renderCal(); renderSummary(); } };
   $('plus').onclick = () => { if (days < 30) { days++; renderCal(); renderSummary(); } };
-  ['fName', 'fPhone', 'fPax', 'fPickup', 'fNote'].forEach(id => $(id).addEventListener('input', renderSummary));
+  ['fName', 'fPhone', 'fPax', 'fNote'].forEach(id => $(id).addEventListener('input', renderSummary));
   render();
 })();
